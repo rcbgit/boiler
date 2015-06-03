@@ -1,0 +1,205 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'angular-flash',
+1 verbose cli   '--save' ]
+2 info using npm@2.11.0
+3 info using node@v0.12.4
+4 verbose node symlink /usr/local/bin/node
+5 verbose install initial load of /Users/rbassett/Documents/boiler .04/package.json
+6 warn package.json boiler@1.0.0 No repository field.
+7 warn package.json boiler@1.0.0 No README data
+8 verbose installManyTop reading scoped package data from /Users/rbassett/Documents/boiler .04/node_modules/angular-ui-router/package.json
+9 verbose installManyTop reading scoped package data from /Users/rbassett/Documents/boiler .04/node_modules/bcrypt-nodejs/package.json
+10 verbose installManyTop reading scoped package data from /Users/rbassett/Documents/boiler .04/node_modules/body-parser/package.json
+11 verbose installManyTop reading scoped package data from /Users/rbassett/Documents/boiler .04/node_modules/connect-flash/package.json
+12 verbose installManyTop reading scoped package data from /Users/rbassett/Documents/boiler .04/node_modules/cookie-parser/package.json
+13 verbose installManyTop reading scoped package data from /Users/rbassett/Documents/boiler .04/node_modules/express/package.json
+14 verbose installManyTop reading scoped package data from /Users/rbassett/Documents/boiler .04/node_modules/express-session/package.json
+15 verbose installManyTop reading scoped package data from /Users/rbassett/Documents/boiler .04/node_modules/method-override/package.json
+16 verbose installManyTop reading scoped package data from /Users/rbassett/Documents/boiler .04/node_modules/mongojs/package.json
+17 verbose installManyTop reading scoped package data from /Users/rbassett/Documents/boiler .04/node_modules/mongoose/package.json
+18 verbose installManyTop reading scoped package data from /Users/rbassett/Documents/boiler .04/node_modules/morgan/package.json
+19 verbose installManyTop reading scoped package data from /Users/rbassett/Documents/boiler .04/node_modules/passport/package.json
+20 verbose installManyTop reading scoped package data from /Users/rbassett/Documents/boiler .04/node_modules/passport-local/package.json
+21 info package.json connect-flash@0.1.1 No license field.
+22 info package.json passport-local@1.0.0 No license field.
+23 info package.json mongojs@0.18.2 No license field.
+24 info package.json angular-ui-router@0.2.15 No license field.
+25 info package.json bcrypt-nodejs@0.0.3 No license field.
+26 verbose readDependencies loading dependencies from /Users/rbassett/Documents/boiler .04/package.json
+27 silly cache add args [ 'angular-flash', null ]
+28 verbose cache add spec angular-flash
+29 silly cache add parsed spec { raw: 'angular-flash',
+29 silly cache add   scope: null,
+29 silly cache add   name: 'angular-flash',
+29 silly cache add   rawSpec: '',
+29 silly cache add   spec: '*',
+29 silly cache add   type: 'range' }
+30 silly addNamed angular-flash@*
+31 verbose addNamed "*" is a valid semver range for angular-flash
+32 silly addNameRange { name: 'angular-flash', range: '*', hasData: false }
+33 silly mapToRegistry name angular-flash
+34 silly mapToRegistry using default registry
+35 silly mapToRegistry registry https://registry.npmjs.org/
+36 silly mapToRegistry uri https://registry.npmjs.org/angular-flash
+37 verbose addNameRange registry:https://registry.npmjs.org/angular-flash not in flight; fetching
+38 verbose request uri https://registry.npmjs.org/angular-flash
+39 verbose request no auth needed
+40 info attempt registry request try #1 at 18:15:18
+41 verbose request id 2cb0345e9b7c0169
+42 http request GET https://registry.npmjs.org/angular-flash
+43 http 200 https://registry.npmjs.org/angular-flash
+44 silly get cb [ 200,
+44 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+44 silly get     etag: '"63CB390KRJ3GDZHG4AKVYWNTZ"',
+44 silly get     'content-type': 'application/json',
+44 silly get     'cache-control': 'max-age=60',
+44 silly get     'content-length': '4116',
+44 silly get     'accept-ranges': 'bytes',
+44 silly get     date: 'Tue, 02 Jun 2015 22:15:20 GMT',
+44 silly get     via: '1.1 varnish',
+44 silly get     age: '0',
+44 silly get     connection: 'keep-alive',
+44 silly get     'x-served-by': 'cache-atl6224-ATL',
+44 silly get     'x-cache': 'MISS',
+44 silly get     'x-cache-hits': '0',
+44 silly get     'x-timer': 'S1433283320.674862,VS0,VE81',
+44 silly get     vary: 'Accept' } ]
+45 verbose get saving angular-flash to /Users/rbassett/.npm/registry.npmjs.org/angular-flash/.cache.json
+46 silly addNameRange number 2 { name: 'angular-flash', range: '*', hasData: true }
+47 silly addNameRange versions [ 'angular-flash', [ '1.2.0' ] ]
+48 silly addNamed angular-flash@1.2.0
+49 verbose addNamed "1.2.0" is a plain semver version for angular-flash
+50 silly mapToRegistry name angular-flash
+51 silly mapToRegistry using default registry
+52 silly mapToRegistry registry https://registry.npmjs.org/
+53 silly mapToRegistry uri https://registry.npmjs.org/angular-flash
+54 verbose addRemoteTarball https://registry.npmjs.org/angular-flash/-/angular-flash-1.2.0.tgz not in flight; adding
+55 verbose addRemoteTarball [ 'https://registry.npmjs.org/angular-flash/-/angular-flash-1.2.0.tgz',
+55 verbose addRemoteTarball   '9307fde8b56e92ed37935322a825456bd177af54' ]
+56 info retry fetch attempt 1 at 18:15:19
+57 info attempt registry request try #1 at 18:15:19
+58 http fetch GET https://registry.npmjs.org/angular-flash/-/angular-flash-1.2.0.tgz
+59 http fetch 200 https://registry.npmjs.org/angular-flash/-/angular-flash-1.2.0.tgz
+60 silly fetchAndShaCheck shasum 9307fde8b56e92ed37935322a825456bd177af54
+61 verbose addTmpTarball /var/folders/n_/35j1tv_d1lv_w31jhvc921f00000gn/T/npm-40602-e5d4ab6a/registry.npmjs.org/angular-flash/-/angular-flash-1.2.0.tgz not in flight; adding
+62 verbose addTmpTarball already have metadata; skipping unpack for angular-flash@1.2.0
+63 silly cache afterAdd angular-flash@1.2.0
+64 verbose afterAdd /Users/rbassett/.npm/angular-flash/1.2.0/package/package.json not in flight; writing
+65 verbose afterAdd /Users/rbassett/.npm/angular-flash/1.2.0/package/package.json written
+66 silly install resolved [ { name: 'angular-flash',
+66 silly install resolved     version: '1.2.0',
+66 silly install resolved     main: 'angular-flash.js',
+66 silly install resolved     description: 'Angular.js Flash Messages',
+66 silly install resolved     repository:
+66 silly install resolved      { type: 'git',
+66 silly install resolved        url: 'https://github.com/gtramontina/angular-flash.git' },
+66 silly install resolved     scripts: { postinstall: 'bower install', test: 'make test' },
+66 silly install resolved     keywords: [ 'angular', 'js', 'flash', 'messages' ],
+66 silly install resolved     author:
+66 silly install resolved      { name: 'Guilherme J. Tramontina',
+66 silly install resolved        email: 'guilherme.tramontina@gmail.com' },
+66 silly install resolved     devDependencies:
+66 silly install resolved      { connect: '^2.27.4',
+66 silly install resolved        'connect-route': '^0.1.4',
+66 silly install resolved        'uglify-js': '^2.4.15',
+66 silly install resolved        bower: '^1.3.12',
+66 silly install resolved        karma: '^0.12.28',
+66 silly install resolved        'karma-mocha': '^0.1.9',
+66 silly install resolved        'karma-ng-scenario': '^0.1.0',
+66 silly install resolved        'karma-firefox-launcher': '*' },
+66 silly install resolved     gitHead: '21b72483723fd17be5a33803d262f64df16d573b',
+66 silly install resolved     bugs: { url: 'https://github.com/gtramontina/angular-flash/issues' },
+66 silly install resolved     homepage: 'https://github.com/gtramontina/angular-flash',
+66 silly install resolved     _id: 'angular-flash@1.2.0',
+66 silly install resolved     _shasum: '9307fde8b56e92ed37935322a825456bd177af54',
+66 silly install resolved     _from: 'angular-flash@*',
+66 silly install resolved     _npmVersion: '1.4.28',
+66 silly install resolved     _npmUser: { name: 'gtramontina', email: 'guilherme.tramontina@gmail.com' },
+66 silly install resolved     maintainers: [ [Object] ],
+66 silly install resolved     dist:
+66 silly install resolved      { shasum: '9307fde8b56e92ed37935322a825456bd177af54',
+66 silly install resolved        tarball: 'http://registry.npmjs.org/angular-flash/-/angular-flash-1.2.0.tgz' },
+66 silly install resolved     directories: {},
+66 silly install resolved     _resolved: 'https://registry.npmjs.org/angular-flash/-/angular-flash-1.2.0.tgz' } ]
+67 info install angular-flash@1.2.0 into /Users/rbassett/Documents/boiler .04
+68 info installOne angular-flash@1.2.0
+69 verbose installOne of angular-flash to /Users/rbassett/Documents/boiler .04 not in flight; installing
+70 verbose lock using /Users/rbassett/.npm/_locks/angular-flash-3de90c026d9cb5a4.lock for /Users/rbassett/Documents/boiler .04/node_modules/angular-flash
+71 silly install write writing angular-flash 1.2.0 to /Users/rbassett/Documents/boiler .04/node_modules/angular-flash
+72 verbose unbuild node_modules/angular-flash
+73 silly gentlyRm /Users/rbassett/Documents/boiler .04/node_modules/angular-flash is being purged from base /Users/rbassett/Documents/boiler .04
+74 verbose gentlyRm don't care about contents; nuking /Users/rbassett/Documents/boiler .04/node_modules/angular-flash
+75 verbose tar unpack /Users/rbassett/.npm/angular-flash/1.2.0/package.tgz
+76 verbose tar unpacking to /Users/rbassett/Documents/boiler .04/node_modules/angular-flash
+77 silly gentlyRm /Users/rbassett/Documents/boiler .04/node_modules/angular-flash is being purged
+78 verbose gentlyRm don't care about contents; nuking /Users/rbassett/Documents/boiler .04/node_modules/angular-flash
+79 silly gunzTarPerm modes [ '755', '644' ]
+80 silly gunzTarPerm extractEntry package.json
+81 silly gunzTarPerm extractEntry .npmignore
+82 silly gunzTarPerm extractEntry README.md
+83 silly gunzTarPerm extractEntry angular-flash.js
+84 silly gunzTarPerm extractEntry .travis.yml
+85 silly gunzTarPerm extractEntry Makefile
+86 silly gunzTarPerm extractEntry .editorconfig
+87 silly gunzTarPerm extractEntry bower.json
+88 silly gunzTarPerm extractEntry .bowerrc
+89 silly gunzTarPerm extractEntry test/karma.conf.js
+90 silly gunzTarPerm extractEntry test/scenarios.js
+91 silly gunzTarPerm extractEntry test/test.server.js
+92 silly gunzTarPerm extractEntry test/app/index.html
+93 verbose write writing to /Users/rbassett/Documents/boiler .04/node_modules/angular-flash/package.json
+94 info preinstall angular-flash@1.2.0
+95 verbose readDependencies loading dependencies from /Users/rbassett/Documents/boiler .04/node_modules/angular-flash/package.json
+96 verbose readDependencies loading dependencies from /Users/rbassett/Documents/boiler .04/node_modules/angular-flash/package.json
+97 silly install resolved []
+98 verbose about to build /Users/rbassett/Documents/boiler .04/node_modules/angular-flash
+99 info build /Users/rbassett/Documents/boiler .04/node_modules/angular-flash
+100 info linkStuff angular-flash@1.2.0
+101 silly linkStuff angular-flash@1.2.0 has /Users/rbassett/Documents/boiler .04/node_modules as its parent node_modules
+102 verbose linkBins angular-flash@1.2.0
+103 verbose linkMans angular-flash@1.2.0
+104 verbose rebuildBundles angular-flash@1.2.0
+105 info install angular-flash@1.2.0
+106 info postinstall angular-flash@1.2.0
+107 verbose unsafe-perm in lifecycle true
+108 info angular-flash@1.2.0 Failed to exec postinstall script
+109 verbose unlock done using /Users/rbassett/.npm/_locks/angular-flash-3de90c026d9cb5a4.lock for /Users/rbassett/Documents/boiler .04/node_modules/angular-flash
+110 verbose stack Error: angular-flash@1.2.0 postinstall: `bower install`
+110 verbose stack spawn ENOENT
+110 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:17:16)
+110 verbose stack     at ChildProcess.emit (events.js:110:17)
+110 verbose stack     at maybeClose (child_process.js:1015:16)
+110 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
+111 verbose pkgid angular-flash@1.2.0
+112 verbose cwd /Users/rbassett/Documents/boiler .04
+113 error Darwin 14.3.0
+114 error argv "node" "/usr/local/bin/npm" "install" "angular-flash" "--save"
+115 error node v0.12.4
+116 error npm  v2.11.0
+117 error file sh
+118 error code ELIFECYCLE
+119 error errno ENOENT
+120 error syscall spawn
+121 error angular-flash@1.2.0 postinstall: `bower install`
+121 error spawn ENOENT
+122 error Failed at the angular-flash@1.2.0 postinstall script 'bower install'.
+122 error This is most likely a problem with the angular-flash package,
+122 error not with npm itself.
+122 error Tell the author that this fails on your system:
+122 error     bower install
+122 error You can get their info via:
+122 error     npm owner ls angular-flash
+122 error There is likely additional logging output above.
+123 verbose exit [ 1, true ]
+124 verbose unbuild node_modules/angular-flash
+125 info preuninstall angular-flash@1.2.0
+126 info uninstall angular-flash@1.2.0
+127 verbose unbuild rmStuff angular-flash@1.2.0 from /Users/rbassett/Documents/boiler .04/node_modules
+128 info postuninstall angular-flash@1.2.0
+129 silly gentlyRm /Users/rbassett/Documents/boiler .04/node_modules/angular-flash is being purged from base /Users/rbassett/Documents/boiler .04
+130 verbose gentlyRm don't care about contents; nuking /Users/rbassett/Documents/boiler .04/node_modules/angular-flash
+131 silly vacuum-fs purging /Users/rbassett/Documents/boiler .04/node_modules/angular-flash
+132 silly vacuum-fs quitting because other entries in /Users/rbassett/Documents/boiler .04/node_modules

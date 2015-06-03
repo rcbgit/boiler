@@ -1,0 +1,33 @@
+<div ng-controller="newsCtrl" class="container">
+	<h1>Updates</h1>
+	<h1>{{user.local.email}}</h1>
+	<div class="jumbotron">
+		<div class="form-group">
+			<label for="subject">Subject</label>
+			<input ng-model="newUpdate.subject" id="subject" type="text" class="form-control">
+		</div>
+		<div class="form-group">
+			<label for="newsBody">Body</label>
+			<textarea ng-model="newUpdate.body" id="newsBody" class="form-control" rows="3"></textarea>
+		</div>
+		<button class="btn btn-primary" ng-click="postNews()" ng-disabled="isAddButtonDisabled == true">Post</button>
+		<button class="btn btn-info" ng-click="updateNews()" ng-disabled="isUpdateButtonDisabled == true">Update</button>
+	</div>
+	<div ng-repeat="new in news">
+		<div class="panel panel-primary">
+	        <div class="panel-heading">
+	            <h3 class="panel-title">{{new.subject}} </h3>
+	        </div>
+	        <div class="panel-body">
+	            {{new.body}}
+	            <hr>
+	            <button class="btn btn-danger" ng-click="deleteNews(new._id)">Remove</button>
+	            <button class="btn btn-warning" ng-click="editNews(new._id)">Edit</button>
+	        	<br>
+	        	<h6>
+	            	{{new.date}}
+	            </h6>
+	        </div>
+	    </div>
+	</div>
+</div>

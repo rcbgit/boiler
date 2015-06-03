@@ -1,0 +1,27 @@
+{
+  "name": "boiler",
+  "version": "1.0.0",
+  "description": "basic boilerplate app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "rcb",
+  "license": "ISC",
+  "dependencies": {
+    "angular-ui-router": "^0.2.15",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.12.4",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.3.5",
+    "express": "^4.12.4",
+    "express-session": "^1.11.2",
+    "method-override": "^2.3.3",
+    "mongojs": "^0.18.2",
+    "mongoose": "^4.0.4",
+    "morgan": "^1.5.3",
+    "passport": "^0.2.2",
+    "passport-local": "^1.0.0"
+  }
+}
