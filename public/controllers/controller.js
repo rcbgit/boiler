@@ -45,11 +45,11 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
     });  
 
     function authenticate($q, Auth, $state, $timeout) {
-      if (user.isAuthenticated()) {
+      if (Auth.isLoggedIn()) {
         return $q.when()
       } else {
         $timeout(function() {
-          $state.go('logInPage')
+          $state.go('login')
         })
         return $q.reject()
       }
