@@ -83,8 +83,6 @@ myApp.controller('loginCtrl', ['$scope', '$http', '$state', 'Auth', function($sc
         console.log('about to post');    
         $http.post('/login', $scope.local).success(function(response){
             console.log('successful post');
-            //Auth.setUser(response);
-
             console.log($scope.local)
             Auth.setUser($scope.local.email);
             console.log(Auth.getUser());
