@@ -72,16 +72,26 @@ module.exports = function(app, passport, post) {
 	});   
 
     app.post('/login', function(req, res, next) {
+    	console.log(req.body);
 	  passport.authenticate('local-login', function(err, user, info) {
-	    if (err) { return next(err); }
+	    if (err) { 
+			console.log(err);
+	    	return next(err); 
+	    }
 	    if (!user) { 
-
-	    	console.log(info);
-	    	return res.redirect('/#/login'); }
+	    	console.log(user);
+	    	var param = 'There was an error with your login';
+	    	//return res.redirect('/#/login?valid=' + param);
+	    	return res.status(500); 
+	    }
 	    req.logIn(user, function(err) {
-	      if (err) { return next(err); }
-	      console.log(req);
-	      return res.redirect('/#/people');
+	      if (err) { 
+	      	console.log(err);
+	      	return next(err); 
+	      }
+	      //console.log(req);
+	      console.log(user);
+	      return res.redirect('/#/news');
 	    });
 		})(req, res, next);
 	});

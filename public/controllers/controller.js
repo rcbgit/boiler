@@ -11,6 +11,9 @@ myApp.factory('Auth', function(){
         },
         isLoggedIn : function(){
             return(user)? user : false;
+        },
+        getUser: function(){
+            return user;
         }
       }
 });
@@ -49,15 +52,17 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
         return $q.when()
       } else {
         $timeout(function() {
-          $state.go('login')
+          $state.go('preLogin')
         })
         return $q.reject()
       }
     }
 });
 
-myApp.controller('navCtrl', ['$scope', '$location', '$http', function($scope, $location, $http) {
+myApp.controller('navCtrl', ['$scope', '$location', '$http', 'Auth', function($scope, $location, $http, Auth) {
 $scope.isActive = function (viewLocation) {
+    $scope.authenticated = Auth.isLoggedIn();
+    console.log($scope.authenticated);
     console.log($location.url());
      var active = (viewLocation === $location.url());
      return active;
@@ -65,33 +70,37 @@ $scope.isActive = function (viewLocation) {
 }]);
 
 myApp.controller('loginCtrl', ['$scope', '$http', '$state', 'Auth', function($scope, $http, $state, Auth) {
-   /*
     $scope.signup = function(){
         console.log($scope.local);
         $http.post('/signup', $scope.local).success(function(response){
-            Auth.setUser(response);
-            console.log('successful sign up!');
+            console.log($scope.local)
+            Auth.setUser($scope.local.email);
+            console.log(Auth.getUser());
+            $state.go('people'); 
         });
     };
-
-    $scope.login = function(){
-        console.log($scope.local);
+    $scope.login = function(){    
+        console.log('about to post');    
         $http.post('/login', $scope.local).success(function(response){
-            Auth.setUser(response);
-            console.log('successful login');
-        });
-    };
-    */
+            console.log('successful post');
+            //Auth.setUser(response);
+
+            console.log($scope.local)
+            Auth.setUser($scope.local.email);
+            console.log(Auth.getUser());
+            $state.go('news');
+            });
+        };
 }]);
 
 myApp.controller('newsCtrl', ['$scope', '$http', 'Auth', '$state', function($scope, $http, Auth, $state) {
-    console.log($state);
-    console.log(Auth);
+
     $scope.isAddButtonDisabled = false;
     $scope.isUpdateButtonDisabled = true;
 
 
     var refresh = function(){
+        console.log(Auth.user);
         $http.get('/news').success(function(response){
             console.log('I received data from GET');
             $scope.news = response;
